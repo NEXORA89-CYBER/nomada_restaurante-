@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NÓMADA Cocina Urbana — sabores contemporáneos en Medellín. Reserva, conoce nuestro menú y pide por WhatsApp.">
+  <title>NÓMADA | Cocina Urbana</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="announcement">NUEVO MENÚ DE TEMPORADA · RESERVAS POR WHATSAPP</div>
+
+  <header class="header">
+    <a class="logo" href="#inicio">NÓMADA<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav id="mainNav">
+      <a href="#menu">Menú</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#reservas">Reservas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="header-cta" href="#reservas">Reservar mesa</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="kicker">COCINA URBANA · MEDELLÍN</p>
+        <h1>Comida que<br><em>te mueve.</em></h1>
+        <p class="hero-description">Sabores colombianos reinterpretados con ingredientes frescos, técnica y una buena dosis de creatividad.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Explorar menú <span>↗</span></a>
+          <a class="btn btn-ghost" href="#reservas">Reservar una mesa</a>
+        </div>
+        <div class="hero-meta">
+          <span>★ 4.9</span>
+          <span>·</span>
+          <span>+1.200 visitantes</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="dish dish-main">
+          <div class="plate">
+            <div class="food burger"></div>
+            <div class="food greens"></div>
+            <div class="food sauce"></div>
+          </div>
+          <span class="dish-label">PLATO DE LA CASA</span>
+        </div>
+        <div class="floating-note"><strong>Chef's choice</strong><br>Menú cambia cada temporada.</div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">PARA EMPEZAR</p>
+          <h2>El menú.</h2>
+        </div>
+        <p>Una carta corta, pensada para que cada plato tenga personalidad.</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab active" data-category="todos">Todos</button>
+        <button class="tab" data-category="entradas">Entradas</button>
+        <button class="tab" data-category="fuertes">Fuertes</button>
+        <button class="tab" data-category="postres">Postres</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-card" data-category="entradas">
+          <div class="food-art art-arepa"><span>01</span></div>
+          <div class="menu-info"><div><h3>Arepa Nómada</h3><p>Maíz blanco, queso costeño, hogao y chicharrón.</p></div><strong>$24.000</strong></div>
+        </article>
+        <article class="menu-card" data-category="fuertes">
+          <div class="food-art art-bowl"><span>02</span></div>
+          <div class="menu-info"><div><h3>Bowl Antioqueño</h3><p>Arroz criollo, res glaseada, aguacate y encurtidos.</p></div><strong>$38.000</strong></div>
+        </article>
+        <article class="menu-card" data-category="fuertes">
+          <div class="food-art art-pasta"><span>03</span></div>
+          <div class="menu-info"><div><h3>Pasta de la Casa</h3><p>Pasta fresca, tomate asado, albahaca y parmesano.</p></div><strong>$34.000</strong></div>
+        </article>
+        <article class="menu-card" data-category="postres">
+          <div class="food-art art-dessert"><span>04</span></div>
+          <div class="menu-info"><div><h3>Brownie de Café</h3><p>Chocolate 70%, café colombiano y helado de vainilla.</p></div><strong>$18.000</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience" id="experiencia">
+      <div class="experience-copy">
+        <p class="kicker">NO ES SOLO COMIDA</p>
+        <h2>Un lugar para quedarse un rato.</h2>
+        <p>Luz cálida, música tranquila y una cocina abierta que convierte cada visita en una experiencia. Ideal para una cena, una cita o simplemente comer algo diferente.</p>
+        <div class="stats">
+          <div><strong>7</strong><span>días abiertos</span></div>
+          <div><strong>12</strong><span>platos de autor</span></div>
+          <div><strong>4.9</strong><span>valoración</span></div>
+        </div>
+      </div>
+      <div class="experience-card">
+        <div class="neon-circle">N</div>
+        <p>BUEN SABOR.<br>BUENA COMPAÑÍA.</p>
+      </div>
+    </section>
+
+    <section class="reserve section" id="reservas">
+      <div>
+        <p class="kicker">TU MESA TE ESPERA</p>
+        <h2>Haz tu reserva.</h2>
+        <p>Selecciona una fecha y escríbenos por WhatsApp. Te confirmamos disponibilidad.</p>
+      </div>
+      <form id="reservationForm" class="reservation-form">
+        <label>Nombre<input id="name" type="text" placeholder="Tu nombre" required></label>
+        <label>Personas<select id="people"><option>2 personas</option><option>3 personas</option><option>4 personas</option><option>5+ personas</option></select></label>
+        <label>Fecha<input id="date" type="date" required></label>
+        <label>Hora<select id="time"><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option></select></label>
+        <button class="btn btn-primary" type="submit">Solicitar reserva ↗</button>
+        <small>Al enviar, se abrirá WhatsApp con tu solicitud.</small>
+      </form>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <div class="contact-main">
+        <p class="kicker">ENCUÉNTRANOS</p>
+        <h2>Nos vemos en<br>Medellín.</h2>
+        <p>Provenza · El Poblado<br>Medellín, Colombia</p>
+      </div>
+      <div class="contact-details">
+        <div><span>HORARIO</span><strong>Lun — Dom · 12:00 — 22:30</strong></div>
+        <div><span>WHATSAPP</span><strong>+57 300 000 0000</strong></div>
+        <div><span>INSTAGRAM</span><strong>@nomada.cocina</strong></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>NÓMADA.</span><p>Proyecto demostrativo de portafolio · 2026</p></footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
